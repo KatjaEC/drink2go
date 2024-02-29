@@ -1,0 +1,35 @@
+.product-card {
+  width: 280px;
+  padding: 40px 20px 20px;
+  background-color: $color-primary;
+  border-radius: 4px;
+}
+
+.product-card__link {
+  display: block;
+  text-decoration: none;
+  color: $color-text;
+}
+
+.product-card__image {
+  display: block;
+  margin: 0 auto 24px;
+}
+
+.product-card__heading {
+  margin: 0 0 4px;
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 700;
+}
+
+.product-card__description {
+  margin: 0 0 16px;
+}
+
+.product-card__purchase-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px 50px;
+}

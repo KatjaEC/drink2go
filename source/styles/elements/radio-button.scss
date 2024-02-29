@@ -37,7 +37,7 @@
 }
 
 .radio-button__input:disabled + .radio-button__label {
-  color: $range-secondary;
+  color: $color-text-additional;
 
   &::before {
     border: 2px solid $range-secondary;

@@ -2,8 +2,10 @@
   display: block;
   min-width: 113px;
   padding: 8px 20px;
+  font-family: "Montserrat", "Arial", sans-serif;
   font-size: 16px;
   line-height: 24px;
+  font-weight: 400;
   text-align: center;
   text-decoration: none;
   border: none;
@@ -13,5 +15,33 @@
   &--primary {
     background-color: $color-secondary;
     color: $color-primary;
+  }
+
+  &--secondary {
+    background-color: $color-primary;
+    color: $color-secondary;
+  }
+
+  &--pagination {
+    min-width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 0;
+  }
+
+  &--pagination-previous {
+    font-size: 0;
+  }
+
+  &--pagination-next {
+    font-size: 0;
+    transform: rotate(180deg);
+  }
+
+  &--pagination-current {
+    background-color: transparent;
+    color: $color-text;
+    font-weight: 600;
   }
 }
