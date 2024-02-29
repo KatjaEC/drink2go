@@ -1,0 +1,11 @@
+.item-label {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 700;
+  letter-spacing: 0.48px;
+  text-transform: uppercase;
+
+  &--new {
+    color: $color-secondary;
+  }
+}

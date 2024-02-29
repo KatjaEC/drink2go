@@ -1,0 +1,37 @@
+.hero-slider {
+  &--first-theme {
+    background-color: #f3ebe1;
+  }
+
+  &--second-theme {
+    background-color: #eae6fc;
+  }
+
+  &--third-theme {
+    background-color: #e5e6e8;
+  }
+}
+
+.hero-slider__wrapper {
+  position: relative;
+  margin: 0 auto;
+  width: 320px;
+  overflow: hidden;
+}
+
+.hero-slider__list {
+  width: 320px;
+}
+
+.hero-slider__button {
+  position: absolute;
+  width: 20px;
+  height: 100%;
+  top: 0;
+  left: 0;
+
+  &--next {
+    left: auto;
+    right: 0;
+  }
+}

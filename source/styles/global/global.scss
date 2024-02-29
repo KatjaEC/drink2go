@@ -1,1 +1,31 @@
 /* здесь используйте глобальные селекторы img, body, html и так далее */
+
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-width: 320px;
+  min-height: 100%;
+  margin: 0;
+  background-color: $color-primary;
+  color: $color-text;
+}
+
+main {
+  flex-grow: 1;
+}
+
+img {
+  object-fit: scale-down;
+  max-width: 100%;
+  height: auto;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}

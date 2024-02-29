@@ -1,0 +1,39 @@
+.site-navigation {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  background-color: $color-primary;
+  list-style: none;
+
+  &--closed {
+    display: none;
+  }
+
+  &--opened {
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    z-index: 10;
+  }
+}
+
+.site-navigation__item {
+  border-top: 1px solid #f0ebff;
+
+  &:last-child {
+    border-bottom: 1px solid #f0ebff;
+  }
+}
+
+.site-navigation__link {
+  display: block;
+  padding: 20px 30px;
+  color: $color-text;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.24px;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+}

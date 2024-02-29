@@ -1,0 +1,16 @@
+.slider-button {
+  display: block;
+  background-color: transparent;
+  color: $color-secondary;
+  border: none;
+  appearance: none;
+
+  &--next {
+    transform: rotate(180deg);
+  }
+}
+
+.slider-button__icon {
+  width: 20px;
+  height: 20px;
+}

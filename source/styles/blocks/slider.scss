@@ -1,0 +1,30 @@
+.slider {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.slider__item {
+  display: block;
+  width: 320px;
+  padding: 0 20px 60px 20px;
+  flex-shrink: 0;
+  text-align: center;
+}
+
+.slider-item__label {
+  margin: 0 auto;
+}
+
+.slider-item__heading {
+  margin: 0 0 10px 0;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: 0.72px;
+}
+
+.slider-item__description {
+  margin: 0 0 20px 0;
+}
