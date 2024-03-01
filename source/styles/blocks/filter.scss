@@ -40,3 +40,26 @@
   flex-direction: column;
   gap: 20px;
 }
+
+@media (min-width: $tablet-width) {
+  .filter__form {
+    display: grid;
+    grid-template-columns: repeat(3, 223px);
+    gap: 40px 30px;
+  }
+
+  .filter__group {
+    width: 223px;
+    margin-bottom: 0;
+  }
+
+  .filter__group-range {
+    width: 223px;
+  }
+
+  .filter__buttons-wrapper {
+    flex-direction: row;
+    justify-content: center;
+    grid-column: 1/-1;
+  }
+}

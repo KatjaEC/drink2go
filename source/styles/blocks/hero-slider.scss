@@ -1,4 +1,5 @@
 .hero-slider {
+  position: relative;
   &--first-theme {
     background-color: #f3ebe1;
   }
@@ -33,5 +34,32 @@
   &--next {
     left: auto;
     right: 0;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .hero-slider {
+    &::before {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 188px;
+      background-color: $color-primary;
+      content: "";
+    }
+  }
+
+  .hero-slider__wrapper {
+    width: $tablet-width;
+  }
+
+  .hero-slider__list {
+    width: $tablet-width;
+  }
+
+  .hero-slider__button {
+    width: 80px;
+    height: 640px;
   }
 }

@@ -3,7 +3,7 @@
   flex-wrap: wrap;
   justify-content: flex-end;
   margin: 0;
-  padding: 0 60px;
+  padding: 0 60px 0 0;
   list-style: none;
 }
 
@@ -15,4 +15,14 @@
 
 .user-navigation__text {
   display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .user-navigation {
+    padding: 0;
+  }
+
+  .user-navigation__link {
+    padding: 32px 22px;
+  }
 }

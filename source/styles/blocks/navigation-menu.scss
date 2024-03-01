@@ -3,6 +3,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
+  padding-left: 72px;
 }
 
 .navigation-menu__toggle {
@@ -20,5 +21,24 @@
   &--opened {
     background: url("../../images/icons/stack.svg#nav-close-menu-button") no-repeat center;
     background-size: 16px 16px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .navigation-menu {
+    padding-left: 122px;
+    gap: 0 60px;
+  }
+
+  .navigation-menu__toggle {
+    display: none;
+  }
+
+  .navigation-menu__site-navigation {
+    width: 400px;
+  }
+
+  .navigation-menu__user-navigation {
+    width: 120px;
   }
 }

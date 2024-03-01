@@ -1,0 +1,27 @@
+.developer-info {
+  padding: 20px 20px 30px;
+  text-align: center;
+}
+
+.developer-info__copyright {
+  margin: 0;
+  font-size: 12px;
+  line-height: 16px;
+  color: $color-text-additional;
+}
+
+.developer-info__link {
+  position: relative;
+  display: inline-block;
+  padding: 0 16px 0 0;
+  color: $color-text-additional;
+  text-decoration: none;
+}
+
+.developer-info__logo {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 12px;
+  height: 16px;
+}

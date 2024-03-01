@@ -22,6 +22,22 @@
     color: $color-secondary;
   }
 
+  &--add-to-cart {
+    position: relative;
+    padding-left: 46px;
+
+    &::before {
+      position: absolute;
+      top: 10px;
+      left: 20px;
+      width: 20px;
+      height: 16px;
+      background: url("../../images/icons/stack.svg#button-add-to-cart") no-repeat center;
+      background-size: 20px 16px;
+      content: "";
+    }
+  }
+
   &--pagination {
     min-width: 40px;
     display: flex;

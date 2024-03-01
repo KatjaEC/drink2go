@@ -16,3 +16,14 @@
   top: 12px;
   left: 20px;
 }
+
+@media (min-width: $tablet-width) {
+  .header__navigation-wrapper {
+    width: $tablet-width;
+    min-height: 80px;
+  }
+
+  .header__logo {
+    top: 22px;
+  }
+}

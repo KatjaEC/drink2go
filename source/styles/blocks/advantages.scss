@@ -9,3 +9,13 @@
 .advantages__subheading {
   margin-bottom: 36px;
 }
+
+@media (min-width: $tablet-width) {
+  .advantages {
+    padding: 60px 20px 100px;
+  }
+
+  .advantages__subheading {
+    margin-bottom: 60px;
+  }
+}

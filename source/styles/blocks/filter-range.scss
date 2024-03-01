@@ -1,6 +1,6 @@
 .filter-range__scale {
   position: relative;
-  width: 100%;
+  width: 280px;
   height: 24px;
   margin: 0 0 24px;
 }
@@ -46,8 +46,20 @@
 }
 
 .filter-range__price-input {
+  position: relative;
   display: flex;
+  flex-wrap: wrap;
   gap: 10px 44px;
+
+  &::before {
+    position: absolute;
+    top: 19px;
+    left: calc(50% - 4px);
+    width: 8px;
+    height: 2px;
+    background-color: $color-text-additional;
+    content: "";
+  }
 }
 
 .filter-range__price {
@@ -65,5 +77,23 @@
 
   &::placeholder {
     color: $color-text-additional;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .filter-range__scale {
+    width: 223px;
+  }
+
+  .filter-range__bar::before {
+    width: 192px;
+  }
+
+  .filter-range__price-input {
+    column-gap: 48px;
+  }
+
+  .filter-range__price {
+    width: 87px;
   }
 }

@@ -1,6 +1,7 @@
 .logo {
   display: flex;
-  width: 32px;
+  flex-wrap: wrap;
+  gap: 10px 20px;
 }
 
 .logo__text {

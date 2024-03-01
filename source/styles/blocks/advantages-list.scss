@@ -47,8 +47,45 @@
 
 .advantages-list__heading {
   margin: 0 0 4px;
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 700;
 }
 
 .advantages-list__text {
   margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .advantages-list {
+    display: grid;
+    grid-template-columns: repeat(2, 340px);
+    gap: 50px 30px;
+  }
+
+  .advantages-list__item {
+    padding: 0 0 0 72px;
+    text-align: start;
+
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
+
+    &::before {
+      top: 4px;
+      left: 0;
+      right: auto;
+    }
+  }
+
+  .advantages-list__heading {
+    margin-bottom: 10px;
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  .advantages-list__text {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
