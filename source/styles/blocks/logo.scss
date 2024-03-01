@@ -1,10 +1,22 @@
 .logo {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   gap: 10px 20px;
+  text-decoration: none;
+  color: $color-text;
+  font-size: 12px;
+  line-height: 16px;
 }
 
 .logo__text {
   padding: 0;
+  width: 126px;
   display: none;
+}
+
+@media (min-width: $desktop-width) {
+  .logo__text {
+    display: block;
+  }
 }

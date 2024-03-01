@@ -8,3 +8,9 @@
     width: $tablet-width;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .main__advantages {
+    width: $desktop-width;
+  }
+}

@@ -27,3 +27,17 @@
     top: 22px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .header__navigation-wrapper {
+    width: $desktop-width;
+    min-height: 80px;
+    margin: 0 auto;
+    padding: 0 40px;
+  }
+
+  .header__logo {
+    left: 40px;
+    width: 316px;
+  }
+}

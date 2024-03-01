@@ -7,3 +7,15 @@
 .product-list__item:not(:last-child) {
   margin-bottom: 20px;
 }
+
+@media (min-width: $tablet-width) {
+  .product-list {
+    display: grid;
+    grid-template-columns: repeat(2, 349px);
+    gap: 30px;
+  }
+
+  .product-list__item:not(:last-child) {
+    margin-bottom: 0;
+  }
+}

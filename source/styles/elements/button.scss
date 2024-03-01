@@ -46,18 +46,22 @@
     padding: 8px 0;
   }
 
-  &--pagination-previous {
+  &--pagination-link {
     font-size: 0;
-  }
-
-  &--pagination-next {
-    font-size: 0;
-    transform: rotate(180deg);
   }
 
   &--pagination-current {
     background-color: transparent;
     color: $color-text;
     font-weight: 600;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .button {
+    &--pagination-link {
+      font-size: 16px;
+      padding: 8px 20px;
+    }
   }
 }

@@ -33,3 +33,22 @@
   justify-content: space-between;
   gap: 10px 50px;
 }
+
+@media (min-width: $tablet-width) {
+  .product-card {
+    width: 349px;
+    padding: 50px 30px 30px;
+  }
+
+  .product-card__image {
+    margin-bottom: 30px;
+  }
+
+  .product-card__heading  {
+    margin: 0 0 10px;
+  }
+
+  .product-card__description {
+    margin: 0 0 20px;
+  }
+}

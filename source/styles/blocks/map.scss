@@ -19,3 +19,9 @@
   min-width: 100%;
   object-fit: cover;
 }
+
+@media (min-width: $tablet-width) {
+  .map__image {
+    height: 480px;
+  }
+}

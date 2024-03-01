@@ -63,3 +63,23 @@
     height: 640px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .hero-slider {
+    &::before {
+      display: none;
+    }
+  }
+
+  .hero-slider__wrapper {
+    width: $desktop-width;
+  }
+
+  .hero-slider__list {
+    width: $desktop-width;
+  }
+
+  .hero-slider__button {
+    height: 100%;
+  }
+}

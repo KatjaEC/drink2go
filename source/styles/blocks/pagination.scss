@@ -13,11 +13,18 @@
   list-style: none;
 }
 
-.pagination__button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 0;
-  padding: 8px 0;
+.pagination__button-icon {
+  &--next {
+    transform: rotate(180deg);
+  }
+}
 
+@media (min-width: $tablet-width) {
+  .pagination__button {
+    font-size: 16px;
+  }
+
+  .pagination__button-icon {
+    display: none;
+  }
 }

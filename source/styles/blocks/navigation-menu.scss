@@ -26,8 +26,8 @@
 
 @media (min-width: $tablet-width) {
   .navigation-menu {
-    padding-left: 122px;
     gap: 0 60px;
+    padding-left: 122px;
   }
 
   .navigation-menu__toggle {
@@ -40,5 +40,21 @@
 
   .navigation-menu__user-navigation {
     width: 120px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .navigation-menu {
+    padding-left: 334px;
+    gap: 0 162px;
+  }
+
+  .navigation-menu__site-navigation {
+    width: 470px;
+  }
+
+  .navigation-menu__user-navigation {
+    width: 264px;
+    gap: 0 20px;
   }
 }

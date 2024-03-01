@@ -25,3 +25,9 @@
   width: 12px;
   height: 16px;
 }
+
+@media (min-width: $tablet-width) {
+  .developer-info {
+    padding: 0;
+  }
+}

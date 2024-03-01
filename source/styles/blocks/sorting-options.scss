@@ -16,8 +16,8 @@
   position: relative;
   width: 165px;
   padding: 4px 26px 4px 10px;
-  background-color: transparent;
   background: url("../../images/icons/stack.svg#sorting-arrow-down") no-repeat calc(100% - 8px) center;
+  background-color: transparent;
   background-size: 10px 10px;
   color: $color-secondary;
   font-family: "Montserrat", "Arial", sans-serif;
@@ -28,4 +28,11 @@
   border-radius: 4px;
   appearance: none;
   cursor: pointer;
+}
+
+@media (min-width: $tablet-width) {
+  .sorting-options {
+    gap: 10px;
+    margin: 0 0 26px;
+  }
 }

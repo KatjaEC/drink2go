@@ -19,3 +19,9 @@
     margin-bottom: 60px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .advantages {
+    padding: 100px 40px 120px;
+  }
+}

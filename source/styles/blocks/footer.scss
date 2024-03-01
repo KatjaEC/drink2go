@@ -100,3 +100,44 @@
   width: 320px;
   margin: 0 auto;
 }
+
+@media (min-width: $tablet-width) {
+  .footer {
+    padding: 40px 20px;
+  }
+
+  .footer__logo-social-wrapper {
+    width: 728px;
+    padding: 0;
+    margin: 0 0 30px;
+  }
+
+  .footer__logo {
+    width: 170px;
+  }
+
+  .footer__additional-menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    margin: 0 0 30px;
+  }
+
+  .footer__menu-group {
+    border-top: none;
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+
+  .footer__group-wrapper {
+    width: 223px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .footer__developer-info {
+    width: 600px;
+  }
+}
