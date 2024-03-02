@@ -22,6 +22,12 @@
     background-color: $range-primary;
     content: "";
   }
+
+  &--disabled {
+    &::before {
+      background-color: $color-text-additional;
+    }
+  }
 }
 
 .filter-range__toggle {
@@ -43,6 +49,42 @@
     right: 20px;
     left: auto;
   }
+
+  &::before {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 16px;
+    height: 16px;
+    background-color: rgba(120, 89, 207, 0.25);
+    border-radius: 50%;
+    content: "";
+    display: none;
+  }
+
+  &:hover,
+  &:focus {
+    &::before {
+      display: block;
+    }
+  }
+
+  &:active {
+    &::before {
+      display: block;
+      background-color: $color-secondary;
+    }
+  }
+
+  &:disabled {
+    background-color: $bg-additional;
+    border-color: $color-text-additional;
+    pointer-events: none;
+
+    &::before {
+      display: none;
+    }
+  }
 }
 
 .filter-range__price-input {
@@ -60,6 +102,10 @@
     background-color: $color-text-additional;
     content: "";
   }
+
+  &:not(:last-of-type) {
+    margin-bottom: 20px;
+  }
 }
 
 .filter-range__price {
@@ -75,8 +121,25 @@
   border-radius: 4px;
   appearance: textfield;
 
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+    appearance: none;
+    margin: 0;
+}
+
   &::placeholder {
     color: $color-text-additional;
+  }
+
+  &:focus {
+    border-color: #593cac;
+    outline: transparent;
+  }
+
+  &:disabled {
+    background-color: $bg-additional;
+    border-color: $range-secondary;
+    pointer-events: none;
   }
 }
 

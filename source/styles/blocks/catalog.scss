@@ -20,6 +20,10 @@
   margin: 0 0 40px;
 }
 
+.catalog__pagination-wrapper:not(:last-of-type) {
+  margin-bottom: 20px;
+}
+
 @media (min-width: $tablet-width) {
   .catalog__wrapper {
     width: $tablet-width;
@@ -36,5 +40,28 @@
 
   .catalog__pagination-wrapper {
     justify-content: flex-end;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog__wrapper {
+    width: $desktop-width;
+    padding: 100px 40px 120px;
+    display: grid;
+    grid-template-columns: 318px 1011px;
+    column-gap: 30px;
+  }
+
+  .catalog__heading {
+    grid-column: 1/-1;
+  }
+
+  .catalog__subheading {
+    margin: 0 0 36px;
+    grid-column: 1/-1;
+  }
+
+  .catalog__list-wrapper {
+    margin: 0 0 60px;
   }
 }

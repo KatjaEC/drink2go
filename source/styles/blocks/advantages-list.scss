@@ -89,3 +89,20 @@
     line-height: 24px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .advantages-list {
+    grid-template-columns: repeat(4, 318px);
+  }
+
+  .advantages-list__item {
+    padding: 76px 0 0;
+    text-align: center;
+
+    &::before {
+      top: 0;
+      left: 0;
+      right: 0;
+    }
+  }
+}

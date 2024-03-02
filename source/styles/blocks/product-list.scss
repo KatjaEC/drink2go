@@ -19,3 +19,9 @@
     margin-bottom: 0;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .product-list {
+    grid-template-columns: repeat(3, 317px);
+  }
+}

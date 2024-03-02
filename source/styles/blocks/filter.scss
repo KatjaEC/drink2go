@@ -10,6 +10,10 @@
 
 .filter__group-range {
   width: 280px;
+
+  &:not(:last-of-type) {
+    margin-bottom: 20px;
+  }
 }
 
 .filter__group-title {
@@ -24,6 +28,10 @@
   margin: 0;
   padding: 0;
   list-style: none;
+
+  &:not(:last-of-type) {
+    margin-bottom: 20px;
+  }
 }
 
 .filter__list-item {
@@ -37,8 +45,13 @@
 
 .filter__buttons-wrapper {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   gap: 20px;
+
+  &:not(:last-of-type) {
+    margin-bottom: 20px;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -62,5 +75,26 @@
     flex-direction: row;
     justify-content: center;
     grid-column: 1/-1;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .filter__form {
+    display: block;
+    margin: 0;
+    width: 318px;
+  }
+
+  .filter__group {
+    margin: 0 0 30px;
+
+    &:last-of-type {
+      margin: 0 0 40px;
+    }
+  }
+
+  .filter__buttons-wrapper {
+    width: 318px;
+    justify-content: flex-start;
   }
 }

@@ -1,5 +1,6 @@
 .advantages {
   padding: 50px 20px 60px;
+  width: 320px;
 }
 
 .advantages__heading {
@@ -13,6 +14,7 @@
 @media (min-width: $tablet-width) {
   .advantages {
     padding: 60px 20px 100px;
+    width: $tablet-width;
   }
 
   .advantages__subheading {
@@ -23,5 +25,10 @@
 @media (min-width: $desktop-width) {
   .advantages {
     padding: 100px 40px 120px;
+    width: $desktop-width;
+  }
+
+  .advantages__subheading {
+    margin-bottom: 80px;
   }
 }

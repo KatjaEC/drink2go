@@ -1,16 +1,3 @@
 .main__advantages {
   margin: 0 auto;
-  width: 320px;
-}
-
-@media (min-width: $tablet-width) {
-  .main__advantages {
-    width: $tablet-width;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .main__advantages {
-    width: $desktop-width;
-  }
 }

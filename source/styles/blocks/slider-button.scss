@@ -5,9 +5,27 @@
   color: $color-secondary;
   border: none;
   appearance: none;
+  cursor: pointer;
 
   &--next {
     transform: rotate(180deg);
+  }
+
+  &:hover,
+  &:focus {
+    background: linear-gradient(to right, $color-primary, transparent);
+    outline: transparent;
+  }
+
+  &:active {
+    background: linear-gradient(to right, rgba(120, 89, 207, 0.25), transparent);
+  }
+
+  &:disabled,
+  &--disabled {
+    color: $color-text-additional;
+    background: transparent;
+    pointer-events: none;
   }
 }
 

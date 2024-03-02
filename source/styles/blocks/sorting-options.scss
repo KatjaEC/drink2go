@@ -24,10 +24,21 @@
   font-size: 16px;
   line-height: 24px;
   font-weight: 600;
+  text-transform: lowercase;
   border: none;
   border-radius: 4px;
   appearance: none;
   cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: #f0ebff;
+    outline: transparent;
+  }
+
+  &:active {
+    background: url("../../images/icons/stack.svg#sorting-arrow-up") no-repeat calc(100% - 8px) center;
+  }
 }
 
 @media (min-width: $tablet-width) {

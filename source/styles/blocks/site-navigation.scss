@@ -19,16 +19,21 @@
 
 .site-navigation__item {
   border-top: 1px solid #f0ebff;
+  color: $color-text;
 
   &:last-child {
     border-bottom: 1px solid #f0ebff;
+  }
+
+  &:active {
+    background-color: #f0ebff;
   }
 }
 
 .site-navigation__link {
   display: block;
   padding: 20px 30px;
-  color: $color-text;
+  color: inherit;
   font-size: 12px;
   line-height: 16px;
   font-weight: 500;
@@ -45,15 +50,40 @@
   }
 
   .site-navigation__item {
+    position: relative;
     border: none;
 
     &:last-child {
       border: none;
     }
+
+    &--current {
+      color: $color-secondary;
+
+      &::before {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: $color-secondary;
+        content: "";
+      }
+    }
   }
 
   .site-navigation__link {
     padding: 32px 20px;
+
+    &:hover,
+    &:focus {
+      color: $color-secondary;
+      outline: transparent;
+    }
+
+    &:active {
+      color: $color-secondary;
+    }
   }
 }
 

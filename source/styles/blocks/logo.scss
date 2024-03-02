@@ -4,19 +4,40 @@
   align-items: center;
   gap: 10px 20px;
   text-decoration: none;
-  color: $color-text;
-  font-size: 12px;
-  line-height: 16px;
 }
 
 .logo__text {
   padding: 0;
   width: 126px;
   display: none;
+  color: $color-text;
+
+  &--header {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  &--footer {
+    font-size: 14px;
+    line-height: 20px;
+  }
 }
 
 @media (min-width: $desktop-width) {
+  .logo {
+    width: 318px;
+
+    &--footer {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+
   .logo__text {
     display: block;
+
+    &--footer {
+      width: 318px;
+    }
   }
 }
