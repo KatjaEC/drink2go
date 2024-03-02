@@ -11,7 +11,7 @@
 
   &--opened {
     position: absolute;
-    top: calc(100% + 1px);
+    top: 100%;
     width: 100%;
     z-index: 10;
   }

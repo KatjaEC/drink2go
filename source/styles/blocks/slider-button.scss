@@ -23,7 +23,7 @@
 
   &:disabled,
   &--disabled {
-    color: $color-text-additional;
+    color: $color-primary-darker;
     background: transparent;
     pointer-events: none;
   }

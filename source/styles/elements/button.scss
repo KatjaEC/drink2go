@@ -15,11 +15,38 @@
   &--primary {
     background-color: $color-secondary;
     color: $color-primary;
+
+    &:hover,
+    &:focus {
+      background-color: $color-secondary-lighter;
+    }
+
+    &:active {
+      background-color: $color-secondary-darker;
+    }
+
+    &:disabled {
+      background-color: $color-primary-darker;
+    }
   }
 
   &--secondary {
     background-color: $color-primary;
     color: $color-secondary;
+
+    &:hover,
+    &:focus {
+      background-color: $color-secondary-lighter;
+      color: $color-primary;
+    }
+
+    &:active {
+      background-color: $color-secondary-darker;
+    }
+
+    &:disabled {
+      background-color: $color-primary-medium;
+    }
   }
 
   &--add-to-cart {
@@ -46,6 +73,10 @@
     padding: 8px 0;
   }
 
+  &--pagination-inactive {
+    display: none;
+  }
+
   &--pagination-link {
     font-size: 0;
   }
@@ -54,6 +85,14 @@
     background-color: transparent;
     color: $color-text;
     font-weight: 600;
+  }
+
+  &:focus {
+    outline: transparent;
+  }
+
+  &:disabled {
+    pointer-events: none;
   }
 }
 

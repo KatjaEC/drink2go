@@ -4,6 +4,17 @@
   align-items: center;
   gap: 10px 20px;
   text-decoration: none;
+  z-index: 5;
+
+  &:hover,
+  &:focus {
+    outline: transparent;
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .logo__text {

@@ -1,6 +1,7 @@
 .checkbox-toggle__label {
   position: relative;
   padding: 2px 0 2px 52px;
+  cursor: pointer;
 
   &::before {
     position: absolute;
@@ -8,7 +9,7 @@
     left: 0;
     width: 42px;
     height: 24px;
-    background-color: $color-text-additional;
+    background-color: $color-primary-darker;
     border-radius: 12px;
     content: "";
   }
@@ -28,6 +29,7 @@
 }
 
 .checkbox-toggle__toggle:checked + .checkbox-toggle__label {
+
   &::before {
     background-color: $color-secondary;
   }
@@ -38,11 +40,43 @@
   }
 }
 
+.checkbox-toggle__toggle {
+
+  &:hover,
+  &:focus {
+    & + .checkbox-toggle__label::before {
+      background-color: rgba(120, 89, 207, 0.25);
+      border: 2px solid $color-secondary-lighter;
+    }
+  }
+
+  &:focus:not(:focus-visible) + .checkbox-toggle__label::before {
+    border-color: transparent;
+    background-color: $color-primary-darker;
+  }
+
+  &:focus-visible + .checkbox-toggle__label::before {
+    background-color: rgba(120, 89, 207, 0.25);
+    border: 2px solid $color-secondary-lighter;
+  }
+
+  &:checked:focus:not(:focus-visible) + .checkbox-toggle__label::before {
+    border-color: transparent;
+    background-color: $color-secondary;
+  }
+
+  &:checked:focus-visible + .checkbox-toggle__label::before {
+    background-color: rgba(120, 89, 207, 0.25);
+    border: 2px solid $color-secondary-lighter;
+  }
+}
+
 .checkbox-toggle__toggle:disabled + .checkbox-toggle__label {
-  color: $color-text-additional;
+  color: $color-primary-darker;
+  pointer-events: none;
 
   &::before {
-    background-color: $range-secondary;
+    background-color: $color-primary-medium;
   }
 
   &::after {
@@ -51,7 +85,12 @@
 }
 
 .checkbox-toggle__toggle:checked:disabled + .checkbox-toggle__label {
+
+  &:before {
+    background-color: $color-primary-medium;
+  }
+
   &::after {
-    background-color: $color-text-additional;
+    background-color: $color-primary-darker;
   }
 }

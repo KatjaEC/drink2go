@@ -14,5 +14,17 @@
   width: 40px;
   height: 40px;
   padding: 10px;
-  color: $color-text-additional;
+  color: $color-primary-darker;
+  border-radius: 4px;
+
+  &:hover,
+  &:focus {
+    color: $color-secondary;
+    background-color: #f0ebff;
+    outline: transparent;
+  }
+
+  &:active {
+    background-color: rgba(120, 89, 207, 0.25);
+  }
 }

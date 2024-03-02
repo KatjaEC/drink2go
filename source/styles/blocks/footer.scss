@@ -94,6 +94,16 @@
     background: url("../../images/icons/stack.svg#contacts-icon-phone") no-repeat center;
     background-size: 13px 16px;
   }
+
+  &:hover,
+  &:focus {
+    color: $color-secondary-lighter;
+    outline: transparent;
+  }
+
+  &:active {
+    color: $color-secondary-darker;
+  }
 }
 
 .footer__developer-info {
