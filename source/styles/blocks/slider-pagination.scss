@@ -30,6 +30,10 @@
     content: "";
   }
 
+  &--active::before {
+    background-color: $color-secondary;
+  }
+
   &:hover,
   &:focus {
     outline: transparent;
@@ -38,7 +42,14 @@
     }
   }
 
-  &--active,
+  &:focus:not(:focus-visible)::before {
+    background-color: $color-secondary;
+  }
+
+  &:focus-visible::before {
+    background-color: rgba(120, 89, 207, 0.25);
+  }
+
   &:active {
     &::before {
       background-color: $color-secondary;
