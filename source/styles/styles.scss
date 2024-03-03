@@ -1,10 +1,13 @@
+/* VENDOR */
+@import "../vendor/nouislider/nouislider.css";
+
 /* GLOBAL */
 @import "./global/variables.scss";
 @import "./global/global.scss";
 @import "./global/visually-hidden.scss";
 @import "./global/fonts.scss";
 
-/*ELEMENTS */
+/* ELEMENTS */
 @import "./elements/item-label.scss";
 @import "./elements/button.scss";
 @import "./elements/item-price.scss";
@@ -39,3 +42,4 @@
 @import "./blocks/footer.scss";
 @import "./blocks/social-list.scss";
 @import "./blocks/developer-info.scss";
+@import "../vendor/price-range.scss";

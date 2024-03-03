@@ -29,7 +29,6 @@
 }
 
 .checkbox-toggle__toggle:checked + .checkbox-toggle__label {
-
   &::before {
     background-color: $color-secondary;
   }
@@ -41,7 +40,6 @@
 }
 
 .checkbox-toggle__toggle {
-
   &:hover,
   &:focus {
     & + .checkbox-toggle__label::before {
@@ -85,8 +83,7 @@
 }
 
 .checkbox-toggle__toggle:checked:disabled + .checkbox-toggle__label {
-
-  &:before {
+  &::before {
     background-color: $color-primary-medium;
   }
 

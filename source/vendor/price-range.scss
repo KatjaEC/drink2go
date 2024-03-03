@@ -1,0 +1,135 @@
+.filter-range__scale {
+  position: relative;
+  width: calc(280px - 6px);
+  height: 24px;
+  margin: 0 0 24px;
+}
+
+.noUi-target {
+  position: absolute;
+  top: 50%;
+  left: 6px;
+  width: 100%;
+  height: 2px;
+  background-color: $color-primary-medium;
+  border-radius: unset;
+  border: none;
+  box-shadow: none;
+
+  & .noUi-connects {
+    overflow: visible;
+    border-radius: uset;
+  }
+
+  & .noUi-connect {
+    margin: auto 0;
+    bottom: 0;
+    height: 4px;
+    background: $color-secondary-lighter;
+  }
+
+  & .noUi-handle {
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-color: $color-primary;
+    border-radius: 50%;
+    border: 2px solid $color-secondary-lighter;
+    box-shadow: none;
+    cursor: pointer;
+  }
+
+  & .noUi-handle::before {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 16px;
+    height: 16px;
+    background-color: $color-secondary;
+    opacity: 0.25;
+    border-radius: 50%;
+    content: "";
+    display: none;
+  }
+
+  & .noUi-handle::after {
+    display: none;
+  }
+
+  & .noUi-handle:hover,
+  & .noUi-handle:focus {
+      outline: transparent;
+
+      &::before {
+        display: block;
+      }
+    }
+
+  & .noUi-handle:active {
+    border-color: $color-secondary;
+
+    &::before {
+      background-color: $color-secondary;
+      opacity: 1;
+    }
+  }
+
+  & .noUi-handle:disabled,
+  & .noUi-handle--disabled {
+    background-color: $bg-additional;
+    border-color: $color-primary-darker;
+    pointer-events: none;
+
+    &::before {
+      display: none;
+    }
+  }
+}
+
+.noUi-target--disabled {
+  position: absolute;
+  top: 50%;
+  left: 6px;
+  width: 100%;
+  height: 2px;
+  background-color: $color-primary-medium;
+  pointer-events: none;
+
+  & .noUi-connect {
+    background-color: $color-primary-darker;
+  }
+
+  & .noUi-handle {
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    width: 24px;
+    height: 24px;
+    background-color: $bg-additional;
+    border-radius: 50%;
+    border: 2px solid $color-primary-darker;
+    box-shadow: none;
+
+    &::before,
+    &::after {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .filter-range__scale {
+    width: calc(220px - 6px);
+    margin-bottom: 31px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .filter-range__scale {
+    width: calc(318px - 6px);
+    margin-bottom: 31px;
+  }
+}

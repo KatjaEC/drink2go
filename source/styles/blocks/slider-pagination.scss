@@ -37,6 +37,7 @@
   &:hover,
   &:focus {
     outline: transparent;
+
     &::before {
       background-color: rgba(120, 89, 207, 0.25);
     }

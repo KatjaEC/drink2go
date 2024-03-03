@@ -87,10 +87,15 @@
 
   .filter__group {
     margin: 0 0 30px;
+    width: 318px;
 
     &:last-of-type {
       margin: 0 0 40px;
     }
+  }
+
+  .filter__group-range {
+    width: 318px;
   }
 
   .filter__buttons-wrapper {
