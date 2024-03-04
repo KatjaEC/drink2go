@@ -1,16 +1,10 @@
-.filter-range__scale {
-  position: relative;
-  width: calc(280px - 6px);
-  height: 24px;
-  margin: 0 0 24px;
-}
-
-.noUi-target {
+.filter-range__scale .noUi-target {
   position: absolute;
   top: 50%;
-  left: 6px;
+  left: 0;
   width: 100%;
   height: 2px;
+  padding: 0 11px 0 7px;
   background-color: $color-primary-medium;
   border-radius: unset;
   border: none;
@@ -29,7 +23,7 @@
   }
 
   & .noUi-handle {
-    top: 0;
+    top: 1px;
     bottom: 0;
     margin: auto 0;
     display: block;
@@ -121,15 +115,13 @@
 }
 
 @media (min-width: $tablet-width) {
-  .filter-range__scale {
-    width: calc(220px - 6px);
-    margin-bottom: 31px;
+  .filter-range__scale .noUi-target {
+    padding: 0 17px 0 7px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .filter-range__scale {
-    width: calc(318px - 6px);
-    margin-bottom: 31px;
+  .filter-range__scale .noUi-target {
+    padding: 0 7px;
   }
 }
