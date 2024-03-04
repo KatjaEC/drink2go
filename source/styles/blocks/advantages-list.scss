@@ -60,7 +60,7 @@
   .advantages-list {
     display: grid;
     grid-template-columns: repeat(2, 340px);
-    gap: 50px 30px;
+    gap: 50px 29px;
   }
 
   .advantages-list__item {
@@ -72,9 +72,19 @@
     }
 
     &::before {
-      top: 4px;
+      top: 0;
       left: 0;
       right: auto;
+    }
+
+    &--speed::before,
+    &--ecology::before {
+      top: 3px;
+    }
+
+    &--convenience::before,
+    &--energy::before {
+      top: -1px;
     }
   }
 
@@ -96,13 +106,22 @@
   }
 
   .advantages-list__item {
-    padding: 76px 0 0;
+    padding: 77px 0 0;
     text-align: center;
 
     &::before {
       top: 0;
       left: 0;
       right: 0;
+    }
+
+    &--ecology::before {
+      left: 4px;
+    }
+
+    &--convenience::before,
+    &--energy::before {
+      left: 2px;
     }
   }
 }

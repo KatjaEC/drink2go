@@ -6,7 +6,7 @@
   &::before {
     position: absolute;
     top: 0;
-    left: 0;
+    left: -1px;
     width: 42px;
     height: 24px;
     background-color: $color-primary-darker;

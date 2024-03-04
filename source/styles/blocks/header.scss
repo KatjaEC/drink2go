@@ -21,6 +21,7 @@
   .header__navigation-wrapper {
     width: $tablet-width;
     min-height: 80px;
+    padding: 0 20px 0 122px;
   }
 
   .header__logo {
@@ -31,9 +32,8 @@
 @media (min-width: $desktop-width) {
   .header__navigation-wrapper {
     width: $desktop-width;
-    min-height: 80px;
     margin: 0 auto;
-    padding: 0 40px;
+    padding: 0 40px 0 334px;
   }
 
   .header__logo {

@@ -9,7 +9,7 @@
 }
 
 .catalog__heading {
-  margin: 0 0 4px;
+  margin: 0 0 5px;
 }
 
 .catalog__subheading {
@@ -28,6 +28,10 @@
   .catalog__wrapper {
     width: $tablet-width;
     padding: 80px 20px 90px;
+  }
+
+  .catalog__heading {
+    margin: 0 0 4px;
   }
 
   .catalog__list-wrapper {
@@ -57,7 +61,7 @@
   }
 
   .catalog__subheading {
-    margin: 0 0 36px;
+    margin: 0 0 39px;
     grid-column: 1/-1;
   }
 

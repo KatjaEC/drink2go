@@ -13,7 +13,8 @@
 
 .user-navigation__link {
   display: block;
-  padding: 20px;
+  min-width: 60px;
+  padding: 22px 20px 18px;
   color: inherit;
   font-size: 12px;
   line-height: 16px;
@@ -38,12 +39,17 @@
   }
 
   .user-navigation__link {
-    padding: 32px 22px;
+    padding: 32px 22px 28px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .user-navigation {
+    gap: 0 20px;
+  }
+
   .user-navigation__link {
+    display: flex;
     position: relative;
     padding: 32px 20px 32px 44px;
 

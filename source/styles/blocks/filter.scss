@@ -1,9 +1,9 @@
 .filter__form {
-  margin: 0 0 36px;
+  margin: 0 0 39px;
 }
 
 .filter__group {
-  margin: 0 0 30px;
+  margin: 0 0 31px;
   padding: 0;
   border: none;
 }
@@ -18,10 +18,14 @@
 
 .filter__group-title {
   padding: 0;
-  margin: 0 0 20px;
+  margin: 0 0 19px;
   font-size: 16px;
   line-height: 24px;
   font-weight: 600;
+
+  &--price {
+    margin-bottom: 18px;
+  }
 }
 
 .filter__group-list {
@@ -67,6 +71,14 @@
     margin: 0;
   }
 
+  .filter__group-title {
+    margin: 0 0 20px;
+
+    &--price {
+      margin: 0 0 19px;
+    }
+  }
+
   .filter__group-range {
     width: 223px;
   }
@@ -101,5 +113,10 @@
   .filter__buttons-wrapper {
     width: 318px;
     justify-content: flex-start;
+  }
+
+  .filter__button {
+    min-width: 149px;
+    max-width: 220px;
   }
 }

@@ -18,6 +18,7 @@
 }
 
 .site-navigation__item {
+  display: block;
   border-top: 1px solid #f0ebff;
   color: $color-text;
 
@@ -47,6 +48,7 @@
   .site-navigation {
     display: flex;
     flex-wrap: wrap;
+    align-items: flex-start;
   }
 
   .site-navigation__item {

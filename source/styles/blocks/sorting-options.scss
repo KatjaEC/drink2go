@@ -7,6 +7,7 @@
 }
 
 .sorting-options__heading {
+  padding-left: 3px;
   font-size: 16px;
   line-height: 24px;
   font-weight: 600;
@@ -14,9 +15,9 @@
 
 .sorting-options__sort-by {
   position: relative;
-  width: 165px;
-  padding: 4px 26px 4px 10px;
-  background: url("../../images/icons/stack.svg#sorting-arrow-down") no-repeat calc(100% - 8px) center;
+  width: 162px;
+  padding: 4px 24px 4px 11px;
+  background: url("../../images/icons/stack.svg#sorting-arrow-down") no-repeat calc(100% - 6px) center;
   background-color: transparent;
   background-size: 10px 10px;
   color: $color-secondary;
@@ -45,6 +46,16 @@
 @media (min-width: $tablet-width) {
   .sorting-options {
     gap: 10px;
-    margin: 0 0 26px;
+    margin: 0 0 22px;
+  }
+
+  .sorting-options__heading {
+    padding-bottom: 7px;
+  }
+
+  .sorting-options__sort-by {
+    width: 165px;
+    padding: 1px 24px 7px 10px;
+    background-position: calc(100% - 10px) 7px;
   }
 }

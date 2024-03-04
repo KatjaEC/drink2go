@@ -1,7 +1,6 @@
 .logo {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
   gap: 10px 20px;
   text-decoration: none;
   z-index: 5;
@@ -18,7 +17,7 @@
 }
 
 .logo__text {
-  padding: 0;
+  padding: 3px 0 0;
   width: 126px;
   display: none;
   color: $color-text;
@@ -37,6 +36,7 @@
 @media (min-width: $desktop-width) {
   .logo {
     width: 318px;
+    gap: 2px 20px;
 
     &--footer {
       flex-direction: column;
